@@ -24,8 +24,8 @@ jobs:
           API_TOKEN_GITHUB: ${{secrets.KUSTII_GITHUB_KEY}}
         with:
           source-directory: "output"
-          destination-github-username: [yyunee]
-          destination-repository-name: [KustiiWeb]
+          destination-github-username: yyunee
+          destination-repository-name: KustiiWeb
           user-email: ${{secrets.KUSTII_ACCOUNT_EMAIL }}
           commit-message: ${{ github.event.commits[0].message }}
           target-branch: master
