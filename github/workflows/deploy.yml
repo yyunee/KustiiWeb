@@ -21,14 +21,14 @@ jobs:
         id: push_directory
         uses: cpina/github-action-push-to-another-repository@main
         env:
-          API_TOKEN_GITHUB: ${{ secrets.AUTO_ACTIONS }}
+          API_TOKEN_GITHUB: ${{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}}
         with:
           source-directory: "output"
           destination-github-username: [yyunee]
           destination-repository-name: [KustiiWeb]
-          user-email: ${{ secrets.EMAIL }}
+          user-email: ${{ gimyunhe@gmail.com }}
           commit-message: ${{ github.event.commits[0].message }}
-          target-branch: main
+          target-branch: master
 
       - name: Test get variable exported by push-to-another-repository
         run: echo $DESTINATION_CLONED_DIRECTORY
