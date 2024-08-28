@@ -19,7 +19,7 @@ jobs:
 
       - name: Pushes to another repository
         id: push_directory
-        uses: cpina/github-action-push-to-another-repository@main
+        uses: cpina/github-action-push-to-another-repository@master
         env:
           API_TOKEN_GITHUB: ${{secrets.KUSTII_GITHUB_KEY}}
         with:
